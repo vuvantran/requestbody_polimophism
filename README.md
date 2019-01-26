@@ -3,7 +3,7 @@
 This project is used to demostrate how to apply a flexible data structure to request body and process it on Java Spring Restful API.
 
 ## Example
-In this example, we have two birds like Parrot and HummingBird and they are extended from Bird class. Once user submit data to API, depend on what kind of bird its data structure may difference. However, from API, we just need a Bird class to receive these kind of birds and base on configuration we defined in Bird.java, Java will produce a correct instance we want.
+In this example, we have two birds like Parrot and HummingBird and they are extended from Bird class. Once user submit data to API, depend on what kind of bird its data structure may difference. However, from API, we just need a Bird class to receive these kind of birds and base on configuration we defined by annotation in Bird.java, Java will produce a correct instance we want.
 
 Bird's JSON data like:
 ```
@@ -13,7 +13,7 @@ Bird's JSON data like:
 	"words": ["Em oi", "Honney"]
 }
 ```
-Just use Postman and make a request body as above and send to ```localhost:8080```. You will get a message: "Received a parrot"
+Just use **Postman** and make a POST request with body as above and send to ```localhost:8080/test_bird```. You will get a message: **"Received a parrot"**
 
 And HummingBird JSON data like:
 ```
@@ -23,4 +23,8 @@ And HummingBird JSON data like:
 	"favoriteFlower": "Sun Flower"
 }
 ```
-You will get a message: "Received a hummingBird".
+You will get a message: **"Received a hummingBird"**.
+
+## Authors
+
+* **Vu Van Tran** - *Initial work* - [Vu Van Tran](https://github.com/vuvantran)
